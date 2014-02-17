@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.theme-1.4.1.min.css"/>
+        <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.structure-1.4.1.min.css"/>
+        <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.4.1.min.css"/>
+        <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile.icons-1.4.1.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+
+
+
+    </head>
+    <body>
+
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+        <script type="text/javascript" src="jquery/jquery.mobile-1.4.1.min.js"></script>        
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+
+        <div data-role="page" id="home">
+
+            <!-- header -->
+
+            <div data-theme="a" data-role="header">
+                <h3>
+                    <a href="#menu" class="navmenu ui-btn ui-icon-notext ui-corner-all  ui-icon-bullets ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+                    Chatt OFF
+                </h3>
+            </div>    <!-- fim de header -->
+
+            <div data-role="content">
+                <div class="" data-iscroll>
+                    <ul data-role="listview" id="msgentrada" data-theme="a">
+                        <li class="msg-entrada" data-id="1">
+                            <a href="">
+                                <h3> Eduardo Avila -Escritorio central </h3>
+                                <p class="assunto"> Ola tudo bem? pode me ajuda aqui?</p>
+                                <p class="ui-li-aside"><strong>4:48</strong>PM </p>
+                            </a>
+                        </li>
+                        <li class="msg-entrada" data-id="2">
+                            <a  href="">
+                                <h3> Eduardo Avila -Escritorio central </h3>
+                                <p class="assunto"> Ola tudo bem? pode me ajuda aqui?</p>
+                                <p class="ui-li-aside"><strong>4:48</strong>PM </p>
+                            </a>
+                        </li>
+                        <li class="msg-entrada" data-id="3">
+                            <a href="">
+                                <h3> Eduardo Avila -Escritorio central </h3>
+                                <p class="assunto"> Ola tudo bem? pode me ajuda aqui?</p>
+                                <p class="ui-li-aside"><strong>4:48</strong>PM </p>
+                            </a>
+                        </li>
+                        <li class="msg-entrada" data-id="4">
+                            <a href="">
+                                <h3> Eduardo Avila -Escritorio central </h3>
+                                <p class="assunto"> Ola tudo bem? pode me ajuda aqui?</p>
+                                <p class="ui-li-aside"><strong>4:48</strong>PM </p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div data-role="panel" id="menu" data-position="left" data-display="push">
+                <div class="ui-panel-inner">
+                    <ul data-role="listview" class="menu-lista ui-alt-icon ui-nodisc-icon ui-listview" data-theme="a">
+                        <li>
+                            <ul data-role="listview" data-filter="true" data-filder-reveal="true" data-filter-placeholder="Pesquisar.." >
+
+                            </ul>
+                        </li>
+                        <li data-filtertext="Novas,Messagens, Msg, news" data-icon="mail"><a href="#">Caixa Entrada</a></li>
+                        <li data-filtertext="Messagens"><a href="#page2" data-ajax="true">Minhas Messagens</a></li>
+                        <li data-filtertext="user,usuarios"><a href="#" data-ajax="true">Usuários</a></li>
+                        <li data-filtertext=""><a href="../button/" data-ajax="true">Arquivos</a></li>
+                        <li data-filtertext=""><a href="../button/" data-ajax="true">Configurações</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h1> Copyright 2014</h1>
+            </div>
+            <!-- fim footer -->
+        </div>
+
+        <div data-role="page" id="page2" data-theme="a">
+            
+            
+            <div data-role="header">
+                <h2>Are you sure?</h2>
+            </div>
+            
+            <div class="ui-content" role="main">
+                <div class="header-msg">
+                    <h2>Eduardo Avila Malheiros-Escritorio Central -msg </h2> msgID.id;
+                    <p class="ui-li-aside"> <strong>Quinta, 21/02/2014</strong></p>
+                </div>
+
+
+                <ul data-role="listview" data-theme="a" >
+                    <li>
+                        <img class="ui-li-thumb"><img>
+
+                        <p class="msg-detalhe">
+                            Ola tudo bem? pode me ajuda aqui?
+                        </p>
+
+                    </li>
+
+                    <li>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <script type='text/javascript'>
+            
+            $(document).on('pagebeforeshow','#msgentrada',function(){
+                alert('Ola');
+                
+            });
+            
+            
+            $(document).on('click','#msgentrada li a',function(){
+                msgID.id=$(this).attr('data-id');
+                $.mobile.changePage("#page2", {transition:"slide,changeHash:false"});
+            });
+            
+            var msgID={
+                id:null,
+                result:null
+            };
+            
+         
+            
+            
+            
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+            function onDeviceReady() {
+                navigator.splashscreen.show();
+            }
+
+            
+            
+
+        </script>
+    </body>
+</html>
